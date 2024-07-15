@@ -37,6 +37,7 @@ h1 {
   border-bottom: 1px solid lightgray;
   margin: 10px 0 0;
 }
+
 h2 {
   font-size: 0.8rem;
   color: rgba(50, 51, 68, 0.8);
@@ -53,7 +54,7 @@ td, th {
 }
 
 th {
-  border-bottom: 2px solid rgba(50, 51, 68, 0.35);
+  border-bottom: 2px solid rgba(150, 150, 165, 0.8);
 }
 
 td {
@@ -102,6 +103,7 @@ button {
 [id^="game-button"] {
   margin: 0px 10px;
 }
+
 button:active {
   color: whitesmoke;
   background: rgba(69, 73, 126, 0.6);
