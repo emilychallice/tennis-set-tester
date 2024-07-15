@@ -43,13 +43,6 @@ function playGame( winner ) {
 
   row.cells[ winner ].classList.add("bold");
 
-  if (winner !== getLastServerID()) {
-    row.cells[winner].classList.add("servebreak");
-    infoServiceBreak.innerText = "Service break!";
-  } else {
-    infoServiceBreak.innerText = "";
-  }
-
   updateStatus();
 }
 
@@ -85,6 +78,7 @@ function getFirstReceiverName() {
 }
 
 function getNextServerName() {
+  console.log( getNumGamesPlayed() );
   return getNumGamesPlayed() % 2 === 0 ? getFirstServerName() : getFirstReceiverName();
 }
 
