@@ -43,6 +43,10 @@ function playGame( winner ) {
 
   row.cells[ winner ].classList.add("bold");
 
+  if (winner !== getLastServerID()) {
+    row.cells[winner].classList.add("servebreak");
+  }
+
   updateStatus();
 }
 
