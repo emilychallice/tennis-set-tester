@@ -1,0 +1,137 @@
+:root {
+  --col0-colour: whitesmoke;
+  --col1-colour: rgba(69, 73, 126, 0.3);
+  --dark-colour: rgba(50, 51, 68, 0.9);
+}
+
+* {
+  /* padding: 0;
+  margin: 0; */
+  font-family: system-ui;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  font-weight: 500;
+  letter-spacing: 0.03rem;
+  
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 1.6rem;
+  color: var(--dark-colour);
+  border-bottom: 1px solid lightgray;
+  margin: 10px 0 0;
+}
+h2 {
+  font-size: 0.8rem;
+  color: rgba(50, 51, 68, 0.8);
+  margin: 10px 0 30px;
+  border: 2px solid var(--dark-colour);
+  padding: 2px 5px;
+  opacity: 0.9;
+}
+
+td, th {
+  border: 2px solid lightgray;
+  padding: 10px 30px;
+  text-align: center;
+}
+
+th {
+  border-bottom: 2px solid rgba(50, 51, 68, 0.35);
+}
+
+td {
+  font-weight: 400;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 1.1rem;
+  color: var(--dark-colour);
+}
+
+tr:nth-child(odd) > td:last-child,
+tr:nth-child(even) > td:first-child,
+tr:first-child > th:first-child {
+  background: var(--col1-colour);
+}
+
+tr:nth-child(even) > td:last-child,
+tr:nth-child(odd) > td:first-child,
+tr:first-child > th:last-child {
+  background: var(--col0-colour);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#info {
+  font-weight: bold;
+  color: var(--dark-colour);
+}
+
+button {
+  background: whitesmoke;
+  border: 1px solid lightgray;
+  padding: 15px 25px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.03rem;
+  opacity: 0.7;
+}
+
+[id^="game-button"] {
+  margin: 0px 10px;
+}
+button:active {
+  color: whitesmoke;
+  background: rgba(69, 73, 126, 0.6);
+}
+
+button:hover {
+  opacity: 1;
+}
+
+#clear-button,
+#clear-button:active,
+#server-button,
+#server-button:active {
+  padding: 6px 20px;
+  font-size: 0.75rem;
+  background: rgba(69, 73, 126, 0.7);
+  border: 1px solid transparent;
+  color: whitesmoke;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+
+#server-button {
+  align-self: center;
+}
+
+#clear-button {
+  width: 100%;
+}
+
+.servebreak {
+  border: 3px solid var(--dark-colour);
+}
